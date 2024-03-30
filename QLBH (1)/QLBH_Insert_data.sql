@@ -1,0 +1,56 @@
+﻿use QLBH_AO_THUN_NAM
+-- mau sac 
+INSERT INTO MauSac VALUES (N'Đỏ')
+INSERT INTO MauSac VALUES (N'Vàng biển')
+INSERT INTO MauSac VALUES (N'Xanh')
+INSERT INTO MauSac VALUES (N'Tím')
+INSERT INTO MauSac VALUES (N'Xám')
+INSERT INTO MauSac VALUES (N'Trắng')
+INSERT INTO MauSac VALUES (N'Đen')
+INSERT INTO MauSac VALUES (N'Cam')
+INSERT INTO MauSac VALUES (N'Xanh lá')
+
+-- CHAT LIEU
+INSERT INTO ChatLieu VALUES ('Len')
+INSERT INTO ChatLieu VALUES (N'Vải PE')
+INSERT INTO ChatLieu VALUES (N'Vải Cotton')
+INSERT INTO ChatLieu VALUES (N'Vải Linen')
+INSERT INTO ChatLieu VALUES (N'Vải Lycra')
+
+-- NSX
+INSERT INTO NSX VALUES (N'CÔNG TY TNHH QUÂN HÀO')
+INSERT INTO NSX VALUES (N'CÔNG TY TNHH PHÁT THIÊN THANH')
+INSERT INTO NSX VALUES (N'MAY MẶC PHONG PHÚ')
+INSERT INTO NSX VALUES (N'XƯỞNG MAY IN DONNY')
+INSERT INTO NSX VALUES (N'MON AMIE SWEATER')
+INSERT INTO NSX VALUES (N'HANOI UNIFORM')
+INSERT INTO NSX VALUES (N'ÁO THUN ALATAN')
+INSERT INTO NSX VALUES (N'ÁO THUN SAO VIỆT')
+INSERT INTO NSX VALUES (N'ÁO THUN ADP')
+INSERT INTO NSX VALUES (N'ÁO THUN ALT')
+
+-- Dong SP
+INSERT INTO DongSP VALUES ('Sweater')
+INSERT INTO DongSP VALUES ('Hoodie')
+INSERT INTO DongSP VALUES ('Hoodie zip')
+INSERT INTO DongSP VALUES ('Cadigarn')
+
+--SAN PHAM
+INSERT INTO SanPham (MaSP,MaNsx,MaMauSac,MaDongSP,MaChatLieu,Size,MoTa,SoLuongTon,GiaNhap,GiaBan) VALUES('SP001',1,4,3,1,'M',N'Co giãn 2 chiều',100,100000,300000)
+INSERT INTO SanPham (MaSP,MaNsx,MaMauSac,MaDongSP,MaChatLieu,Size,MoTa,SoLuongTon,GiaNhap,GiaBan) VALUES('SP002',2,3,4,6,'L',N'Co giãn 2 chiều',120,120000,270000)
+INSERT INTO SanPham (MaSP,MaNsx,MaMauSac,MaDongSP,MaChatLieu,Size,MoTa,SoLuongTon,GiaNhap,GiaBan) VALUES('SP003',3,4,1,7,'X',N'Co giãn 2 chiều',200,100000,250000)
+INSERT INTO SanPham (MaSP,MaNsx,MaMauSac,MaDongSP,MaChatLieu,Size,MoTa,SoLuongTon,GiaNhap,GiaBan) VALUES('SP004',2,5,3,8,'XL',N'Co giãn 2 chiều',230,15000,350000)
+INSERT INTO SanPham (MaSP,MaNsx,MaMauSac,MaDongSP,MaChatLieu,Size,MoTa,SoLuongTon,GiaNhap,GiaBan) VALUES('SP005',1,7,4,9,'XS',N'Co giãn 2 chiều',100,110000,310000)
+INSERT INTO SanPham (MaSP,MaNsx,MaMauSac,MaDongSP,MaChatLieu,Size,MoTa,SoLuongTon,GiaNhap,GiaBan) VALUES('SP006',8,9,3,1,'S',N'Co giãn 2 chiều',0,120000,400000)
+
+--nhan vien
+INSERT INTO NhanVien VALUES ('NV001',N'Đỗ Thanh An','Nam','2003-06-05',N'Nam Định','0981092003','andtph28299@gmail.com','Andt','123','Admin',1)
+INSERT INTO NhanVien VALUES ('NV002',N'Lê Tuấn Tiến','Nam','2003-06-05',N'Nam Định','0981092003','tiendtph28299@gmail.com','Tien','123','Admin',0)
+INSERT INTO NhanVien VALUES ('NV003',N'Lưu Quang Long','Nam','2003-06-05',N'Nam Định','0981092003','llongdtph28299@gmail.com','Long','123','Admin',1)
+
+SELECT * FROM NhanVien
+SELECT * FROM NSX
+SELECT * FROM DongSP
+SELECT * FROM ChatLieu
+SELECT * FROM MauSac
+SELECT * FROM SanPham
